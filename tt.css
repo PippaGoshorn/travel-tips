@@ -1,0 +1,400 @@
+:root {
+  --white: #f5ffff;
+  --primary: #8AE6DC;
+  --secondary: #cba7f1;
+  --light: #EBF5F5;
+}
+
+body {
+    background-color: var(--white);
+}
+
+.navbar-expand-lg {
+    background-color: var(--primary)
+}
+
+.container.destinations button {
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+}
+
+.container.itinerary button {
+    justify-content: center;
+    text-align: center;
+    margin: auto; 
+}
+
+ul li {
+    list-style-type: none;
+    display: inline;
+    justify-content: center;
+    text-align: center;
+}
+ul li a {
+    text-decoration: none;
+}
+.footer ul li {
+    border-right: 1px solid grey;
+    padding-right: 7px;
+    padding-left: 7px;
+}
+.footer ul li:last-of-type {
+    border-right: none;
+}
+
+.container footer {
+    justify-content: center;
+    text-align: center;
+}
+
+.footer-text {
+    justify-content: center;
+    text-align: center;
+}
+
+.container-footer-text {
+    justify-content: center;
+    text-align: center;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    margin-bottom: 0.5rem;
+}
+
+.footer-nav a {
+    color: #525857;
+}
+
+.footer p {
+    color: #2f3736;
+    margin: 0;
+}
+
+.container.features .h6 {
+    padding-top: 0.5rem;
+}
+
+.container.features {
+    background-color: rgba(130, 217, 208, 0.3);
+    padding-top: calc(var(--bs-gutter-x)*0.5);
+}
+
+.homeicons{
+    width: 5em;
+    height: 5em;
+    background-color: var(--primary);
+    border-radius: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.h6{
+    font-size: 1.25em;
+    font-weight: 600;
+}
+
+.circle-1{
+    height: 3rem;
+    width: 3rem;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.heading-background-image{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+}
+
+.bg-img-prague-rest{
+    background-image: url("./img/Rooftop restaurant Prague.jpg");
+    background-position-y: 7%;
+}
+.bg-img-ny-skyline{
+    background-image: url("../img/NY_Skyline.jpeg");
+    background-position-y: 25%;
+}
+.heading-with-search{
+    aspect-ratio: 16/9;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-bottom: 1vh;
+}
+@media (max-width: 575px) {.heading-with-search{
+    height: 30vh;
+}
+}
+@media (min-width: 576px) {.heading-with-search{
+height: 50vh;
+}
+}
+
+.heading-with-search .d-flex{
+    width: 70%;
+}
+.heading-with-search .d-flex .form-control.me-2{
+    background-color: #b6ece6ac;
+    border:0;
+    color: black;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.heading-with-search .d-flex .form-control.me-2::placeholder{
+    color: var(--bs-grey); 
+    text-align: center;
+}
+
+.container{
+    margin-bottom: var(--bs-gutter-x);
+}
+
+.home-img-container{
+    width: 100%;
+    aspect-ratio: 16/9;
+    margin-bottom: 1vh;
+}
+
+#itinerary-img{
+    width: 100%;
+    height: 250px;
+}
+
+.home-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.heading-background-image.bg-img-ny-skyline{
+    height: 40vh;
+
+}
+.container.header.city .row{
+    height: 40vh;
+}
+
+.container.header.city .col-9 {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding-bottom: 2vh;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.container.header.city .h1{
+    height: fit-content;
+    color: white;
+    background-color: rgba(72, 35, 49, 0.413);
+    text-align: left;
+    padding: 5%;
+    margin-bottom: 0;
+  }
+
+
+.container.city.highlights{
+    background-color: rgba(130, 217, 208, 0.3);
+    padding-top: calc(var(--bs-gutter-x)*0.5);
+}
+
+.container.home.highlights{
+    background-color: var(--light);
+    padding-top: calc(var(--bs-gutter-x)*0.5);
+}
+
+
+.swiper {
+    width: 600px;
+    height: 300px;
+  }
+
+/* Changed width to 500px from 600px so stays within border on sm & xs devices. */
+.carousel {
+    width: 500px;
+    height: 300px;
+    justify-content: center;
+}
+
+/* Media query to resize carousel for iphone etc. */
+@media only screen 
+    and (max-device-width: 414px)
+    { .carousel {
+        width:370px;
+    }
+}
+
+.carousel-caption {
+    height: 40%;
+}
+
+.slides {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    } 
+
+/* .w-100 {
+    width: 50px;
+    } */
+
+.carousel-item {
+    height: 20rem;
+}
+
+.carousel-caption {
+    background-color: rgba(87, 138, 132, 0.4);
+}
+
+.container.explore-destinations .row .col-lg .destinations-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.container.explore-destinations .row .col-lg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+}
+
+.container.explore-destinations .row .col-lg .text p {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container.explore-destinations p {
+    justify-content: center;
+    margin: 2rem;
+}
+
+.container.explore-destinations {
+    border-style: solid; 
+    border-color:rgba(130, 217, 208, 0.9)
+}
+
+.btn-sm {
+    background-color:rgba(130, 217, 208, 1.0);
+    color: rgba(0, 0, 0, 1.0);
+}
+
+.btn-dark {
+    background-color:rgba(130, 217, 208, 0.9);
+}
+
+.p-padding-above {
+    padding-top: 1rem;
+}
+
+.row.share-tips{
+    background-color:rgba(130, 217, 208, 0.35)
+}
+
+.container.itinerary .row.create-itinerary{
+    margin-bottom: 24px;
+}
+
+.container.itinerary .row{
+    padding-top: 12px;
+}
+
+.container.itinerary .row.create-itinerary{ 
+    background-color: var(--light);
+    padding-bottom: 24px;
+}
+
+.container.itinerary .row.share-tips{
+    padding-bottom:12px;
+    background-color:rgba(130, 217, 208, 0.32)
+}
+
+
+
+
+/* Buttons */
+
+#btn-share-the-magic{
+    border-width: 2px;
+    height: 4rem;
+    width: 4rem;
+    color: var(--white);
+}
+.btn-secondary {
+    color: #212529;
+    background-color: #cba7f1;
+    border-color: #cba7f1; }
+    
+.btn-secondary:hover {
+    color: #212529;
+    background-color: #b886ec;
+    border-color: #b17bea; }
+.btn-secondary:focus, .btn-secondary.focus {
+    color: #212529;
+    background-color: #b886ec;
+    border-color: #b17bea;
+    box-shadow: 0 0 0 0.2rem rgba(178, 148, 211, 0.5); }
+.btn-secondary.disabled, .btn-secondary:disabled {
+    color: #212529;
+    background-color: #cba7f1;
+    border-color: #cba7f1; }
+.btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active,
+.show > .btn-secondary.dropdown-toggle {
+    color: #212529;
+    background-color: #b17bea;
+    border-color: #ab70e8; }
+    .btn-secondary:not(:disabled):not(.disabled):active:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus,
+    .show > .btn-secondary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(178, 148, 211, 0.5); }
+
+
+/* Special Go Button class  */
+.btn-go {
+    color: #212529;
+    background-color: #8AE6DC;
+    border-color: #8AE6DC; }
+
+.btn-go:hover {
+    color: #212529;
+    background-color: #b886ec;
+    border-color: #b17bea;
+}
+
+.btn-go:focus,
+.btn-go.focus {
+    color: #212529;
+    background-color: #b886ec;
+    border-color: #b17bea;
+    box-shadow: 0 0 0 0.2rem rgba(178, 148, 211, 0.5);
+}
+
+.btn-go.disabled,
+.btn-go:disabled {
+    color: #212529;
+    background-color: #8AE6DC;
+    border-color: #8AE6DC; }
+
+.btn-go:not(:disabled):not(.disabled):active,
+.btn-go:not(:disabled):not(.disabled).active,
+.show>.btn-go.dropdown-toggle {
+    color: #212529;
+    background-color: #60ddcf;
+    border-color: #55dbcc; }
+
+.btn-go:not(:disabled):not(.disabled):active:focus,
+.btn-go:not(:disabled):not(.disabled).active:focus,
+.show>.btn-go.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(122, 201, 193, 0.5); }
