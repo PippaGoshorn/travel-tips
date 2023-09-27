@@ -226,16 +226,30 @@ height: 50vh;
 }
 
 /* Media query to resize carousel for iphone etc. */
-@media only screen 
-    and (max-device-width: 414px)
-    { .carousel {
+@media only screen and (max-device-width: 414px) { 
+    .carousel {
         width:370px;
+    }
+    .carousel-item.active {
+        height: 250px;
+    }
+    .carousel-inner img {
+        height: 250px;
+    }
+    .carousel-caption {
+        height: 50%;
+    }
+    .carousel-control-prev {
+        height: 250px;
+    }
+    .carousel-control-next {
+        height: 250px;
+    }
+    #carouselExploreDestinations {
+        height: 250px;
     }
 }
 
-.carousel-caption {
-    height: 40%;
-}
 
 .slides {
     display: flex;
